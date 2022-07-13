@@ -1,0 +1,56 @@
+@media screen and (max-width: 1280px) {
+    .main__brands {
+        display: var(--dis-grid);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header__burger-wrapper {
+        display: block;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .main__brands {
+        display: var(--dis-grid);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .header__social-wrapper {
+        width: 70%;
+    }
+    .main__product {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__card-list {
+        flex-wrap: wrap;
+    }
+    .main__card-item {
+        padding: 50px 25px;
+        width: 100%;
+        display: var(--dis-flex);
+        flex-direction: var(--flex-column);
+        align-items: var(--pos-centr);
+    }
+    .main__card-item:not(:last-child) {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__social-wrapper {
+        display: none;
+    }
+    .header {
+        justify-content: flex-start;
+    }
+    .header__logo-wrapper {
+        margin-right: auto;
+    }
+}
